@@ -71,3 +71,11 @@ p + h2 {
 #heavy-unit {
     background-color: #4B317A;
 }
+
+#footer {
+    margin: 20px 0 10px 0;
+    text-align: center;
+}
+    #footer a {
+        color: #9f9;
+    }
