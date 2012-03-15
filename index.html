@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang=en>
+    <head>
+        <meta charset="utf-8">
+        <title>Reach | Awesome War Game</title>
+
+        <link rel=stylesheet href="css/reset.css" media=all>
+        <link rel=stylesheet href="css/main.css" media=all>
+    </head>
+
+    <body>
+        <h1>Reach</h1>
+
+        <div id="game">
+            <div class="cell">
+                <div id="game-options">
+                    <p>
+                    Player
+                    <span id="current-player"></span>
+                    is playing
+                    </p>
+                    <div id="units-selection">
+                        <div id="unit" data-unit-type="Unit" class="unit-icon">Unit</div>
+                        <div id="side-unit" data-unit-type="SideUnit" class="unit-icon">Side</div>
+                        <div id="heavy-unit" data-unit-type="HeavyUnit" class="unit-icon">Heavy</div>
+                    </div>
+                </div>
+                <div id="cr-stage"></div>
+            </div>
+            <div id="instructions" class="cell">
+                <h2>What is this?</h2>
+                <p>
+                Reach is a turn-based, strategy game for two players. Drop your
+                units on the map and make them reach the ennemy line!
+                </p>
+
+                <h2>How to play</h2>
+                <p>
+                This game is to be played by two players on the same computer.
+                One after the other, each player must drop one and only one
+                unit on the map. After that, all units of that player will move
+                one cell forward if possible, and then attack all ennemy units
+                they can reach.
+                </p>
+            </div>
+        </div>
+
+        <!-- Loading libraries -->
+        <script src="js/jquery.js"></script>
+        <script src="js/crafty.js"></script>
+
+        <!-- Loading game files -->
+        <script src="js/config.js"></script>
+        <script src="js/cell.js"></script>
+        <script src="js/map.js"></script>
+        <script src="js/player.js"></script>
+        <script src="js/unit.js"></script>
+        <script src="js/turn.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/gui.js"></script>
+    </body>
+</html>

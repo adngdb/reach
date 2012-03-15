@@ -1,0 +1,73 @@
+/* Generic styles */
+body {
+    background-color: black;
+    color: white;
+    line-height: 1.3em;
+}
+h1 {
+    font: 4.0em bold;
+    text-align: center;
+    margin-bottom: 50px;
+}
+h2 {
+    font: 2.0em bold;
+    text-align: center;
+    margin-bottom: 15px;
+}
+p + h2 {
+    margin-top: 30px;
+}
+
+/* Game styles */
+#game {
+    display: table;
+    margin: auto;
+    width: 90%;
+}
+    #game .cell {
+        display: table-cell;
+        vertical-align: top;
+    }
+
+#instructions {
+    padding-left: 40px;
+}
+
+#game-options {
+    background-color: #333;
+    box-shadow: 0 0 5px white;
+    padding: 10px 20px;
+}
+
+#cr-stage {
+    color: black;
+    max-height: 920px;
+}
+
+/* Unit selection styles */
+#units-selection {
+    text-align: center;
+}
+
+.unit-icon {
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+    margin: 20px;
+}
+
+.selected-unit {
+    border: 3px solid red;
+}
+
+#unit {
+    background-color: #1CCD46;
+}
+
+#side-unit {
+    background-color: #E8624B;
+}
+
+#heavy-unit {
+    background-color: #4B317A;
+}
