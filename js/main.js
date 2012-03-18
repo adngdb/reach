@@ -40,7 +40,14 @@ $(document).ready(function() {
             'cell-3': [3 * REACH.config.cell.width, 0],
             'unit-orange': [4 * REACH.config.cell.width, 0],
             'unit-blue': [4 * REACH.config.cell.width, REACH.config.cell.height],
+            'side-unit-orange': [5 * REACH.config.cell.width, 0],
+            'side-unit-blue': [5 * REACH.config.cell.width, REACH.config.cell.height],
+            'heavy-unit-orange': [6 * REACH.config.cell.width, 0],
+            'heavy-unit-blue': [6 * REACH.config.cell.width, REACH.config.cell.height],
         });
+
+        REACH.selectedUnit = 'Unit';
+        REACH.selectedUnitSprite = 'unit';
 
         var map = REACH.map = Crafty.e('Map').map(REACH.config.width, REACH.config.height);
 
