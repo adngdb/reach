@@ -6,7 +6,7 @@ Crafty.c('Cell', {
         this.requires('2D, DOM, Mouse')
             .bind('Click', function() {
                 if (REACH.accessibleCells[this.gridX][this.gridY] !== null) {
-                    var unit = Crafty.e('Unit, ' + REACH.selectedUnit + ', unit-' + REACH.activePlayer.color)
+                    var unit = Crafty.e('Unit, ' + REACH.selectedUnit + ', ' + REACH.selectedUnitSprite + '-' + REACH.activePlayer.color)
                         .unit(REACH.activePlayer, this.gridX, this.gridY);
                     REACH.activePlayer.units.push(unit);
                     REACH.turn.nextTurn();
