@@ -10,10 +10,6 @@ $(document).ready(function() {
         Crafty.scene('game');
     };
 
-    REACH.updateUI = function(turn) {
-        $('#current-player').text(turn.getActivePlayer().playerNumber);
-    };
-
     REACH.debug = function(cellTypeToDisplay) {
         if (typeof cellTypeToDisplay === undefined || cellTypeToDisplay === false) {
             cellTypeToDisplay = null;

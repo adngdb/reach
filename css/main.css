@@ -38,38 +38,56 @@ p + h2 {
     box-shadow: 0 0 5px white;
     padding: 10px 20px;
 }
+    #game-options > * {
+        background-color: #3f3f3f;
+        border: 1px solid #303030;
+        border-radius: 3px;
+        display: inline-block;
+        padding: 10px 20px;
+        text-align: center;
+    }
+    #game-options .player.active#player-1 {
+        background-color: #7b87ff;
+        border: 1px solid #575fb0;
+    }
+    #game-options .player.active#player-2 {
+        background-color: #d2b825;
+        border: 1px solid #b09a20;
+    }
+    #game-options .player.active .currently-playing {
+        visibility: visible;
+    }
+    #game-options .player-name {
+        font-size: 1.7em;
+        margin-bottom: 5px;
+    }
+    #game-options .currently-playing {
+        font-size: 0.8em;
+        visibility: hidden;
+    }
+
+/* Unit selection styles */
+#units-selection {
+    float: right;
+    padding: 10px 0;
+}
+    .unit-icon {
+        border: 2px solid #3f3f3f;
+        border-radius: 5px;
+        cursor: pointer;
+        display: inline-block;
+        height: 60px;
+        margin: 0 20px;
+        width: 60px;
+    }
+    .selected-unit {
+        border: 2px solid #333;
+        background-color: #999;
+    }
 
 #cr-stage {
     color: black;
     max-height: 920px;
-}
-
-/* Unit selection styles */
-#units-selection {
-    text-align: center;
-}
-
-.unit-icon {
-    height: 60px;
-    width: 60px;
-    display: inline-block;
-    margin: 20px;
-}
-
-.selected-unit {
-    border: 3px solid red;
-}
-
-#unit {
-    background-color: #1CCD46;
-}
-
-#side-unit {
-    background-color: #E8624B;
-}
-
-#heavy-unit {
-    background-color: #4B317A;
 }
 
 #footer {
@@ -79,3 +97,17 @@ p + h2 {
     #footer a {
         color: #9f9;
     }
+
+.tooltip {
+    background-color: #ddd;
+    border: 1px solid #666;
+    border-radius: 5px;
+    color: black;
+    display: none;
+    left: 0;
+    max-width: 300px;
+    padding: 5px 10px;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+}
