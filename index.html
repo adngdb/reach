@@ -70,5 +70,20 @@
         <script src="js/turn.js"></script>
         <script src="js/main.js"></script>
         <script src="js/gui.js"></script>
+
+        <!-- Piwik -->
+        <script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://services.lqbs.fr/piwik/" : "http://services.lqbs.fr/piwik/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <script type="text/javascript">
+try {
+    var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+    piwikTracker.trackPageView();
+    piwikTracker.enableLinkTracking();
+} catch( err ) {}
+        </script>
+        <noscript><p><img src="http://services.lqbs.fr/piwik/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript>
+        <!-- End Piwik Tracking Code -->
     </body>
 </html>
