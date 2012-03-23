@@ -23,6 +23,7 @@ Crafty.c('Unit', {
         this.y = this.gridY * REACH.config.cell.height - this.gridY * (REACH.config.cell.offsetTopY + REACH.config.cell.offsetBottomY);
         this.w = REACH.config.cell.width;
         this.h = REACH.config.cell.height;
+        this.z = this.y;
     },
 
     moveForward: function() {
